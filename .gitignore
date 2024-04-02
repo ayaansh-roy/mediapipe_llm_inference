@@ -160,4 +160,4 @@ cython_debug/
 #.idea/
 
 # ignore any bin model format
-.bin
+*.bin
