@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LLM Inference Web Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #eeeee4;
+        }
+
+        h1 {
+            color: #555; /* Gray color for title */
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            resize: none;
+            box-sizing: border-box;
+            font-size: 14px;
+            color: #555; /* Gray color for text */
+            font-family: 'Courier New', Courier, monospace; /* Different font */
+        }
+
+        input[type="button"] {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #28a745;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        input[type="button"]:hover {
+            background-color: #0056b3;
+        }
+
+        #output {
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Mediapipe LLM Inference Demo</h1>
+        <label for="input">Input:</label><br>
+        <textarea id="input" rows="10"></textarea><br>
+        <input type="button" id="submit" value="Get Response" disabled><br>
+        <br>
+        <label for="output">Result:</label><br>
+        <textarea id="output" rows="10" readonly></textarea>
+        
+    </div>
+    <script type="module" src="index.js"></script>
+</body>
+</html>
